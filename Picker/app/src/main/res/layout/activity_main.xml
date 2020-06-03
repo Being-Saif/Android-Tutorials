@@ -7,40 +7,43 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Dialoge box Exit"
-         android:background="@color/colorAccent"
-        android:textColor="@color/colorPrimary"
-        android:onClick="getAlert"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="selected date"
         android:gravity="center"
         android:text=""
         android:id="@+id/tv"
-        android:textSize="50dp" />
+        android:textSize="30dp" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Date Picker"
-        android:textColor="@color/colorPrimary"
-        android:background="@color/colorAccent"
+        android:textColor="#292828"
+        android:background="#E91E63"
         android:onClick="datepick"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Selected time"
         android:text=""
+        android:textSize="30dp"
         android:id="@+id/tv2"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="timepick"
         android:text="Time picker"
-        android:background="@color/colorAccent"
-        android:textColor="@color/colorPrimary"/>
+        android:background="#72EF24"
+        android:textColor="#201F1E"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dialoge box Exit"
+        android:background="#03A9F4"
+        android:textColor="#1C1B1B"
+        android:onClick="getAlert"/>
 
 </LinearLayout>
