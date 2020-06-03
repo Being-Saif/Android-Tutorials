@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dialoge box Exit"
+         android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
+        android:onClick="getAlert"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="selected date"
+        android:gravity="center"
+        android:text=""
+        android:id="@+id/tv"
+        android:textSize="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date Picker"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorAccent"
+        android:onClick="datepick"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selected time"
+        android:text=""
+        android:id="@+id/tv2"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="timepick"
+        android:text="Time picker"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimary"/>
+
+</LinearLayout>
