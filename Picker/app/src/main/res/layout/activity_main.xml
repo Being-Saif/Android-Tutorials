@@ -14,25 +14,26 @@
         android:gravity="center"
         android:text=""
         android:id="@+id/tv"
-        android:textSize="30dp" />
+        android:textSize="30sp" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Date Picker"
+        android:text="@string/date_picker"
         android:textColor="#292828"
         android:background="#E91E63"
         android:onClick="datepick"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/tv2"
         android:text=""
-        android:textSize="30dp"
-        android:id="@+id/tv2"/>
+        android:textSize="30sp"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="timepick"
-        android:text="Time picker"
+        android:text="@string/time_picker"
         android:background="#72EF24"
         android:textColor="#201F1E"/>
     <TextView
@@ -41,7 +42,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dialoge box Exit"
+        android:text="@string/dialoge_box_exit"
         android:background="#03A9F4"
         android:textColor="#1C1B1B"
         android:onClick="getAlert"/>

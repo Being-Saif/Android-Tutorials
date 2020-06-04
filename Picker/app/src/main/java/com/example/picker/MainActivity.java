@@ -46,16 +46,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void datepick(View view) {
         Calendar c = Calendar.getInstance();
-        int yyear = c.get(Calendar.YEAR);
+        int yyeaar = c.get(Calendar.YEAR);
         int month = c.get(Calendar.MONTH);
         int day = c.get(Calendar.DAY_OF_MONTH);
 
         DatePickerDialog dp = new DatePickerDialog(MainActivity.this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                tv.setText(year+"-"+month+"-"+dayOfMonth);
+                tv.setText(yyeaar+"-"+month+"-"+day);
             }
-        },yyear,month,day);
+        },yyeaar,month,day);
         dp.show();
 
 
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         TimePickerDialog tp = new TimePickerDialog(MainActivity.this, new TimePickerDialog.OnTimeSetListener() {
             @Override
             public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                tv2.setText(hoour+"-"+minutee);
+                tv2.setText(hourOfDay+"-"+minute);
             }
         },hoour,minutee,false);
         tp.show();
