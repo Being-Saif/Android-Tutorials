@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "5697849485",
+    "firebase_url": "https://forms-b1a5b.firebaseio.com",
+    "project_id": "forms-b1a5b",
+    "storage_bucket": "forms-b1a5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5697849485:android:7c62612ffae79221d4fac4",
+        "android_client_info": {
+          "package_name": "com.example.forms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5697849485-4m3p607tva53nt4drk4v877qgv0g2amj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu0zeIRoywb974j1afTkFCbOgZbubR6Ys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5697849485-4m3p607tva53nt4drk4v877qgv0g2amj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

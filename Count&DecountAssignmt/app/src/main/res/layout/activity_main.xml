@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="Toast"
-        android:text="Toast"/>
+        android:text="Toast"
+        android:background="#E91E63"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,12 +25,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="DeCount"
-        android:text="DeCount"/>
+        android:text="DeCount"
+        android:background="#9C27B0"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="count"
-        android:text="Count"/>
+        android:text="Count"
+        android:background="#91EF23"/>
 
 
 </LinearLayout>
