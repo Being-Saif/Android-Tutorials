@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -18,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Login extends AppCompatActivity {
     EditText inputEmail,inputPassword;
     private FirebaseAuth mAuth;
+    private ProgressDialog mLoadingBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +27,8 @@ public class Login extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         inputEmail = findViewById(R.id.inputEmail);
         inputPassword = findViewById(R.id.inputPassword);
+        mLoadingBar=new ProgressDialog(Login.this);
+
 
     }
 
@@ -56,16 +60,23 @@ public class Login extends AppCompatActivity {
             return;
 
         }
+        mLoadingBar.setTitle("Register");
+        mLoadingBar.setMessage("please wait while checking credentials");
+        mLoadingBar.setCanceledOnTouchOutside(false);
+        mLoadingBar.show();
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+
                             startActivity(new Intent(getApplicationContext(),MainActivity.class));
                             Toast.makeText(Login.this, "Logged in succssfully", Toast.LENGTH_SHORT).show();
+
                         } else {
 
                             Toast.makeText(Login.this, "User is not available for the following configuration", Toast.LENGTH_SHORT).show();
+
                         }
 
                         // ...
